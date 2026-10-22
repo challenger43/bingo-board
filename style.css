@@ -5,22 +5,30 @@ body {
 
 #bingoBoard {
     display: grid;
-    grid-template-columns: repeat(5, 100px);
-    gap: 5px;
+    grid-template-columns: repeat(5, 130px);
+    grid-template-rows: repeat(5, 130px);
+    gap: 8px;
     justify-content: center;
+    margin-top: 20px;
 }
 
-.cell {
-    width: 100px;
-    height: 100px;
+.box {
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    text-align: center;
+    padding: 5px;
     box-sizing: border-box;
+    overflow-wrap: anywhere;
+    background-color: white;
+    border-radius: 8px;
 }
 
-.selected {
-    background-color: lightgreen;
+.free {
+    background-color: gold;
+    font-weight: bold;
+}
+#generateButton {
+    margin: 50px;
 }
