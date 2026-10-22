@@ -1,0 +1,26 @@
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+}
+
+#bingoBoard {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.selected {
+    background-color: lightgreen;
+}
